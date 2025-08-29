@@ -536,4 +536,89 @@ section:nth-of-type(4){ animation-delay:.6s; }
   box-shadow: 0 18px 48px rgba(0,0,0,.45), 0 0 0 1px rgba(0,229,255,.15) inset;
   border-color: rgba(0,229,255,.2);
 }
-website refresh and update
+/* Clubs Section - Engineering & Robotics Theme */
+.clubs-section {
+  background: linear-gradient(145deg, #0b0f1a, #121826);
+  padding: 60px 20px;
+  border-top: 3px solid #0ff;
+  position: relative;
+}
+
+.clubs-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(0,255,255,0.2) 30%, transparent 70%);
+  border-radius: 50%;
+  animation: rotateGear 20s linear infinite;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0ff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.clubs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.club-card {
+  background: #1a2233;
+  border: 2px solid #0ff;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0,255,255,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.club-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 35px rgba(0,255,255,0.5);
+}
+
+/* Gear Icon */
+.gear-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background: conic-gradient(from 0deg, #0ff 0% 25%, transparent 25% 50%, #0ff 50% 75%, transparent 75% 100%);
+  border-radius: 50%;
+  position: relative;
+  animation: spinGear 8s linear infinite;
+}
+
+.gear-icon::before {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  background: #1a2233;
+  border-radius: 50%;
+}
+
+@keyframes spinGear {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.club-card h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.club-card p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
