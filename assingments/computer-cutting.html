@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Controlled Cutting</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* --- Project Gallery Styles --- */
+    .project-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;              /* space between images */
+      justify-content: center; /* center images in the row */
+      margin-top: 1rem;
+    }
+
+    .project-image {
+      max-width: 300px;
+      flex: 1 1 300px; /* makes them wrap neatly */
+      text-align: center;
+    }
+
+    .project-image img {
+      width: 100%;       /* responsive */
+      height: auto;      /* keep aspect ratio */
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      display: block;
+      margin: 0 auto;
+    }
+
+    .project-image figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #333;
+      font-style: italic;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <section id="mini-fab-cutting">
+    <h2>Computer Controlled Cutting</h2>
+    <div class="project-gallery">
+      <figure class="project-image">
+        <img src="../images/DesignSS.PNG" alt="Design Screenshot">
+        <figcaption>Step 1: I started by creating the logo in Designer 2, adjusting shapes and text until I was happy with the layout.</figcaption>
+      </figure>
+      <figure class="project-image">
+        <img src="../images/Cutting_Weeding.PNG" alt="Cutting/Weeding">
+        <figcaption>Step 2: Next, I printed the design on vinyl and carefully weeded out the extra material so only the logo remained.</figcaption>
+      </figure>
+      <figure class="project-image">
+        <img src="../images/final applied sticker.PNG" alt="Final Applied Sticker">
+        <figcaption>Step 3: Finally, I layered the vinyl pieces together and applied the finished sticker onto my iPad.</figcaption>
+      </figure>
+    </div>
+  </section>
+</body>
+</html>
