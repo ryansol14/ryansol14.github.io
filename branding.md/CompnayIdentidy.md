@@ -6,4 +6,4 @@ Problem Statement:Construction workers lose time and face safety risks because c
 
 Audience/Stakeholders:
 
-Core Value:
+Core Value: Saftey Efficiency Quality
